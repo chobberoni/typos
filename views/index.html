@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A minimal css framework.">
+  <meta name="author" content="chobberoni">
+
+  <title>Wing</title>
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="http://usewing.ml/dist/wing.min.css"/>
+  <!--<link rel="shortcut icon" href="./favicon.ico" />-->
+
+
+
+</head>
+<body>
+
+<section class="text-center">
+<!-- .container should be wrapping around the grid -->
+<div class="container">
+
+    <h1 class="text-center">The GitHub Search Engine</h1>
+    <!-- For each row, give the class "row" -->
+    <div class="row">
+        <!-- for columns, add the class col-x, there are twelve -->
+        <!-- columns in total, and nesting is not recommended -->
+        <div class="col-6">
+            <p>
+                Please stop coding everything from scratch. It's quite likely someone has written
+                that <code>REGEX</code> expression you're so desparately waiting to write.
+            </p>
+        </div>
+        <div class="col-6">
+            <p>
+            GitHub Search Engine (GSE) is here to find relevant code snippets. Search for anything
+            NodeJS or Python related, below.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6"><input type="text" placeholder="Show me a JS email Regex function"/></div>
+</div>
+    <!--<div class="row">
+        <div class="col-12"><textarea type="text" placeholder="Your Message"></textarea></div>
+    </div>-->
+
+<button>Search</button>
+
+</section>
+<!-- Single Line Code Examples should be wrapped in <code> -->
+<!--<code>console.log("Hello World");</code>-->
+
+<!-- Blocks Of Code Should be in <code> wrapped with <pre> -->
+<div class="row">
+    <div class="col-12">
+        <pre><code>
+            function checkEmail(email) {
+                var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                if (!reg.test(email)) return false;
+                return true;
+            }
+        </code></pre>
+    </div>
+</div>
+
+
+
+</body>

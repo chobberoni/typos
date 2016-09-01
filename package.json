@@ -1,0 +1,23 @@
+{
+  "name": "typos",
+  "version": "0.0.2",
+  "description": "GitHub search engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chobberoni/typos.git"
+  },
+  "keywords": [
+    "search",
+    "engine"
+  ],
+  "author": "corey hobbs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chobberoni/typos/issues"
+  },
+  "homepage": "https://github.com/chobberoni/typos#readme"
+}
