@@ -22,8 +22,6 @@
   },
   "homepage": "https://github.com/chobberoni/typos#readme",
   "dependencies": {
-    "githubot": "^1.0.0",
     "node-rest-client": "^2.0.1",
-    "octokat": "^0.4.18"
   }
 }
