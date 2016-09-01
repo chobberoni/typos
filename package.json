@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/chobberoni/typos#readme",
   "dependencies": {
-    "node-rest-client": "^2.0.1",
+    "node-rest-client": "^2.0.1"
   }
 }
