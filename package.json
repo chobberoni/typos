@@ -4,7 +4,8 @@
   "description": "GitHub search engine",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scripts/gold.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/chobberoni/typos/issues"
   },
-  "homepage": "https://github.com/chobberoni/typos#readme"
+  "homepage": "https://github.com/chobberoni/typos#readme",
+  "dependencies": {
+    "githubot": "^1.0.0",
+    "node-rest-client": "^2.0.1",
+    "octokat": "^0.4.18"
+  }
 }
