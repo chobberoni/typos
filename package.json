@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node scripts/gold.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/chobberoni/typos#readme",
   "dependencies": {
-    "node-rest-client": "^2.0.1"
+    "express": "^4.14.0",
+    "node-rest-client": "^2.0.1",
+    "nodemon": "^1.10.2"
   }
 }
