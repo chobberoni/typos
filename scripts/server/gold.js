@@ -12,19 +12,19 @@ var args = {
 client.registerMethod("gistsMethod", "https://api.github.com/gists/public", "GET");
 client.registerMethod("bigSearchMethod", "https://api.github.com/search/code?q=search+in:file+language:js+user:jquery", "GET");
 
-
-
-//calling some f(x)s
-// client.methods.gistsMethod(args, function (data, response) {
-//     // parsed response body as js object
-//     console.log(data);
-//     // raw response
-//     //console.log(response);
-// });
-
-client.methods.bigSearchMethod(args, function (data, response) {
+module.exports = {
+  //calling some f(x)s
+  client.methods.gistsMethod(args, function (data, response) {
     // parsed response body as js object
     console.log(data);
     // raw response
     //console.log(response);
-});
+  });
+
+  client.methods.bigSearchMethod(args, function (data, response) {
+    // parsed response body as js object
+    console.log(data);
+    // raw response
+    //console.log(response);
+  });
+};

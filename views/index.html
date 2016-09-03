@@ -12,8 +12,25 @@
 
   <!-- Link to CSS -->
   <link rel="stylesheet" href="http://usewing.ml/dist/wing.min.css"/>
-  <!--<link rel="shortcut icon" href="./favicon.ico" />-->
-
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+  <script>
+  $(function(){
+    $(".codeBlock").hide();
+    $(".searchx").typed({
+      strings: ["Show me a JS regex", "Show me a JS email Regex function"],
+      typeSpeed:10
+    });
+    $(".buttonPress").click(function(){
+      $(".codeBlock").show();
+    });
+  });
+  </script>
 
 
 </head>
@@ -45,14 +62,15 @@
 
 
 <div class="row">
+  <form>
     <div class="col-3"></div>
-    <div class="col-6"><input type="text" placeholder="Show me a JS email Regex function"/></div>
-</div>
-    <!--<div class="row">
-        <div class="col-12"><textarea type="text" placeholder="Your Message"></textarea></div>
-    </div>-->
+    <div class="col-6"><input autocomplete="off" autofocus id="search" class="searchx"
+      type="text" placeholder="Show me a JS email Regex function"/></div>
+  </form>
 
-<button>Search</button>
+</div>
+
+<button class="buttonPress">Search</button>
 
 </section>
 <!-- Single Line Code Examples should be wrapped in <code> -->
@@ -61,7 +79,7 @@
 <!-- Blocks Of Code Should be in <code> wrapped with <pre> -->
 <div class="row">
     <div class="col-12">
-        <pre><code>
+        <pre class="codeBlock"><code>
             function checkEmail(email) {
                 var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
                 if (!reg.test(email)) return false;
@@ -71,6 +89,7 @@
     </div>
 </div>
 
-
-
 </body>
+
+
+</html>

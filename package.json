@@ -24,6 +24,7 @@
   "dependencies": {
     "express": "^4.14.0",
     "node-rest-client": "^2.0.1",
-    "nodemon": "^1.10.2"
+    "nodemon": "^1.10.2",
+    "socket.io": "^1.4.8"
   }
 }
