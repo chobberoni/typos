@@ -8,3 +8,6 @@ Help me out :)
 $ npm install
 $ npm start
 ```
+
+### More thoughts
+The real magic is beginning in `typos/scripts/server/gold.js`. That is where I'm building the layer of API calls for search. Just a single file for now, but the methods will be expanded and linked to a db to save search indices.
