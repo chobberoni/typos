@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -13,10 +13,6 @@
   <!-- Link to CSS -->
   <link rel="stylesheet" href="http://usewing.ml/dist/wing.min.css"/>
   <link rel="shortcut icon" href="./favicon.ico" />
-  <script src="/socket.io/socket.io.js"></script>
-  <script>
-    var socket = io();
-  </script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
   <script>
@@ -70,7 +66,14 @@
 
 </div>
 
-<button class="buttonPress">Search</button>
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-6">
+    <a href="/auth/github"><button class="">LOGIN</button></a>
+    <button class="buttonPress">Search</button>
+  </div>
+</div>
+
 
 </section>
 <!-- Single Line Code Examples should be wrapped in <code> -->
