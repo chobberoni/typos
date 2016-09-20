@@ -11,3 +11,6 @@ $ npm start
 
 ### More thoughts
 The real magic is beginning in `typos/scripts/server/gold.js`. That is where I'm building the layer of API calls for search. Just a single file for now, but the methods will be expanded and linked to a db to save search indices.
+
+There is now GitHub OAuth example in `server.js` file using [passport](https://github.com/cfsghost/passport-github/blob/master/examples/login/app.js).
+Also, shoutout to [Jared Hanson](https://github.com/jaredhanson) for the awesome [code snippets](https://github.com/jaredhanson/passport-github#configure-strategy). 🙏🏿
