@@ -1,4 +1,9 @@
 # typos
+[![forthebadge](http://forthebadge.com/images/badges/fuck-it-ship-it.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/contains-technical-debt.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-html.svg)](http://forthebadge.com)
+
 ![image](https://cloud.githubusercontent.com/assets/4432363/18151803/b4d61994-6fa6-11e6-923a-b5e367bd7e25.png)
 
 Help me out :)
