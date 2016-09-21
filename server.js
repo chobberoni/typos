@@ -58,10 +58,10 @@ app.get('/', function(req, res) {
 });
 
 app.get('/auth/github',
-passport.authenticate('github', { scope: [ 'user:email' ] }),
-function(req, res){
-  // The request will be redirected to GitHub for authentication, so this
-  // function will not be called.
+  passport.authenticate('github', { scope: [ 'user:email' ] }),
+  function(req, res){
+    // The request will be redirected to GitHub for authentication, so this
+    // function will not be called.
   });
 
 app.get('/auth/github/callback',
@@ -76,11 +76,11 @@ app.get('/logout', function(req, res){
   res.redirect('/');
 });
 
-// app.get('/profile',
-//   require('connect-ensure-login').ensureLoggedIn(),
-//   function(req, res){
-//     res.redirect('https://google.com');
-//   });
+app.get('/profile',
+  require('connect-ensure-login').ensureLoggedIn(),
+  function(req, res){
+    res.redirect('https://google.com');
+  });
 
 
 var server = app.listen(3000, function() {
