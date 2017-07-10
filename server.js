@@ -76,11 +76,14 @@ app.get('/logout', function(req, res){
   res.redirect('/');
 });
 
+<<<<<<< HEAD
 app.get('/function', function(req, res){
   req.logout();
   res.redirect('/');
 });
 
+=======
+>>>>>>> 1e3ec27fbf57f3040dbc916aeee448f3c0fc13d4
 app.get('/profile',
   require('connect-ensure-login').ensureLoggedIn(),
   function(req, res){
