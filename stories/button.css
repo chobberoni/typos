@@ -5,11 +5,11 @@
   border-radius: 3em;
   cursor: pointer;
   display: inline-block;
-  line-height: 1;
+  line-height: 2;
 }
 .storybook-button--primary {
   color: white;
-  background-color: #1ea7fd;
+  background-color: #2bc779;
 }
 .storybook-button--secondary {
   color: #333;
